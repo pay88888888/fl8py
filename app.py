@@ -24,13 +24,13 @@ NEZHA_PORT = os.environ.get('NEZHA_PORT', '')          # v1哪吒请留空, v0�
 NEZHA_KEY = os.environ.get('NEZHA_KEY', '')            # v1哪吒的NZ_CLIENT_SECRET或v0哪吒agent密钥
 ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', 'fl8.yunka.ggff.net')        # Argo固定隧道域名,留空即使用临时隧道
 ARGO_AUTH = os.environ.get('ARGO_AUTH', 'eyJhIjoiODJhMjdiODRjNzJkYmIyMDlmOTg4ZGQ1NzE2NmRiZjMiLCJ0IjoiMjdmNGU0ZTktYTdmMi00ZjE4LThhZjYtY2ZhNjEwNTBlMmYwIiwicyI6Ik5qa3dNakk1WWpjdE5EaGtPUzAwTm1VMkxXRTRZVGN0WXpCbVpEVmlPVE13TjJVMCJ9')            # Argo固定隧道密钥,留空即使用临时隧道
-ARGO_PORT = int(os.environ.get('ARGO_PORT', '8886<'))   # Argo端口,使用固定隧道token需在cloudflare后台设置端口和这里一致
+ARGO_PORT = int(os.environ.get('ARGO_PORT', '8886'))   # Argo端口,使用固定隧道token需在cloudflare后台设置端口和这里一致
 CFIP = os.environ.get('CFIP', 'saas.sin.fan')             # 优选ip或优选域名
 CFPORT = int(os.environ.get('CFPORT', '443'))          # 优选ip或优选域名对应端口
 NAME = os.environ.get('NAME', '')                      # 节点名称
 CHAT_ID = os.environ.get('CHAT_ID', '')                # Telegram chat_id,推送节点到tg,两个变量同时填写才会推送
 BOT_TOKEN = os.environ.get('BOT_TOKEN', '')            # Telegram bot_token
-PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 3002) # 订阅端口，如无法订阅，请手动修改为分配的端口
+PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 3000) # 订阅端口，如无法订阅，请手动修改为分配的端口
 
 # Create running folder
 def create_directory():
